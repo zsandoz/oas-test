@@ -4,7 +4,7 @@ servers:
     url: foo.bar.com
 info:
   title: OpenAPI Petstore
-  description: This is a sample server Petstore server. For this sample, you can use the api key `special-key` to test the authorization filters. For OAuth2 flow, you may use `user` as both username and password when asked to login.
+  description: test This is a sample server Petstore server. For this sample, you can use the api key `special-key` to test the authorization filters. For OAuth2 flow, you may use `user` as both username and password when asked to login.
   license:
     name: Apache-2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
