@@ -1,0 +1,3 @@
+# my-first-doc
+
+The beginning of an awesome article...
