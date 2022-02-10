@@ -126,14 +126,20 @@ paths:
       parameters:
         - name: tags
           in: query
-          description: Tags to filter by
-          required: true
+          description: Tags to filter for by
           style: form
           explode: false
           schema:
             type: array
             items:
               type: string
+          required: true
+        - schema:
+            type: array
+          in: query
+          name: stopTags
+          description: Tags to filter out by
+          required: true
       responses:
         '200':
           description: successful operation
@@ -727,10 +733,25 @@ components:
         name: Tag
     Pet:
       title: a Pet
-      required:
-        - name
-        - photoUrls
       type: object
+      description: A pet for sale in the pet store
+      example:
+        photoUrls:
+          - photoUrls
+          - photoUrls
+        name: doggie
+        id: 0
+        category:
+          name: name
+          id: 6
+        tags:
+          - name: name
+            id: 1
+          - name: name
+            id: 1
+        status: available
+      xml:
+        name: Pet
       properties:
         id:
           type: integer
@@ -761,24 +782,15 @@ components:
             - available
             - pending
             - sold
-      description: A pet for sale in the pet store
-      example:
-        photoUrls:
-          - photoUrls
-          - photoUrls
-        name: doggie
-        id: 0
-        category:
-          name: name
-          id: 6
-        tags:
-          - name: name
-            id: 1
-          - name: name
-            id: 1
-        status: available
-      xml:
-        name: Pet
+        ageInYears:
+          type: number
+          default: 0
+          format: float
+          example: 0
+          minimum: 0
+      required:
+        - name
+        - photoUrls
     ApiResponse:
       title: An uploaded response
       type: object
