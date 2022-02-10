@@ -215,7 +215,7 @@ paths:
             schema:
               $ref: '#/components/schemas/body'
       responses:
-        '405':
+        '200':
           description: Invalid input
       security:
         - petstore_auth:
@@ -225,7 +225,9 @@ paths:
       x-tags:
         - tag: pet
       x-contentType: application/x-www-form-urlencoded
+      description: 'Description for /pet POST  '
     delete:
+      description: description for /pet/{petId} POST
       tags:
         - pet
       summary: Deletes a pet
@@ -248,6 +250,8 @@ paths:
             type: integer
             format: int64
       responses:
+        '204':
+          description: default 
         '400':
           description: Invalid pet value
       security:
