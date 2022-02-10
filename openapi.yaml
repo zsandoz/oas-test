@@ -227,7 +227,7 @@ paths:
       x-contentType: application/x-www-form-urlencoded
       description: 'Description for /pet POST  '
     delete:
-      description: description for /pet/{petId} POST
+      description: 'description for /pet/{petId} POST'
       tags:
         - pet
       summary: Deletes a pet
@@ -251,7 +251,7 @@ paths:
             format: int64
       responses:
         '204':
-          description: default 
+          description: default
         '400':
           description: Invalid pet value
       security:
@@ -263,7 +263,7 @@ paths:
         - tag: pet
   '/pet/{petId}/uploadImage':
     post:
-      description: description of /pet/{petId}/uploadImage POST
+      description: 'description of /pet/{petId}/uploadImage POST'
       tags:
         - pet
       summary: uploads an image
@@ -533,7 +533,7 @@ paths:
         - tag: user
   '/user/{username}':
     get:
-      description: description for /user/{username} GET
+      description: 'description for /user/{username} GET'
       tags:
         - user
       summary: Get user by user name
@@ -795,6 +795,7 @@ components:
         code: 0
         type: type
         message: message
+      x-examples: {}
     body:
       type: object
       properties:
