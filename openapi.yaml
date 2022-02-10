@@ -263,6 +263,7 @@ paths:
         - tag: pet
   '/pet/{petId}/uploadImage':
     post:
+      description: description of /pet/{petId}/uploadImage POST
       tags:
         - pet
       summary: uploads an image
@@ -321,6 +322,7 @@ paths:
         - tag: store
   /store/order:
     post:
+      description: description of /store/order POST
       tags:
         - store
       summary: Place an order for a pet
@@ -400,6 +402,8 @@ paths:
           schema:
             type: string
       responses:
+        '204':
+          description: Object deleted
         '400':
           description: Invalid ID supplied
         '404':
@@ -422,7 +426,7 @@ paths:
               $ref: '#/components/schemas/User'
         required: true
       responses:
-        default:
+        '201':
           description: successful operation
       x-accepts: application/json
       x-tags:
@@ -430,6 +434,7 @@ paths:
       x-contentType: application/json
   /user/createWithArray:
     post:
+      description: description of /user/createWithArry POST
       tags:
         - user
       summary: Creates list of users with given input array
@@ -437,7 +442,7 @@ paths:
       requestBody:
         $ref: '#/components/requestBodies/UserArray'
       responses:
-        default:
+        '201':
           description: successful operation
       x-accepts: application/json
       x-tags:
@@ -445,6 +450,7 @@ paths:
       x-contentType: application/json
   /user/createWithList:
     post:
+      description: description for /user/createWithList POST
       tags:
         - user
       summary: Creates list of users with given input array
@@ -452,7 +458,7 @@ paths:
       requestBody:
         $ref: '#/components/requestBodies/UserArray'
       responses:
-        default:
+        '201':
           description: successful operation
       x-accepts: application/json
       x-tags:
@@ -460,6 +466,7 @@ paths:
       x-contentType: application/json
   /user/login:
     get:
+      description: description for /user/login GET
       tags:
         - user
       summary: Logs user into the system
@@ -513,18 +520,20 @@ paths:
         - tag: user
   /user/logout:
     get:
+      description: description for /user/logout GET
       tags:
         - user
       summary: Logs out current logged in user session
       operationId: logoutUser
       responses:
-        default:
+        '204':
           description: successful operation
       x-accepts: application/json
       x-tags:
         - tag: user
   '/user/{username}':
     get:
+      description: description for /user/{username} GET
       tags:
         - user
       summary: Get user by user name
@@ -578,6 +587,8 @@ paths:
               $ref: '#/components/schemas/User'
         required: true
       responses:
+        '200':
+          description: User updated
         '400':
           description: Invalid user supplied
         '404':
@@ -602,6 +613,8 @@ paths:
           schema:
             type: string
       responses:
+        '204':
+          description: User deleted successfully
         '400':
           description: Invalid username supplied
         '404':
