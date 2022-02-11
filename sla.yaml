@@ -6,10 +6,7 @@ context:
     $ref: ./openapi.yaml
   provider: ISAGroup
 metrics:
-  requests:
-    $ref: ./metrics.yaml#requests
-  responseTime:
-    $ref: ./metrics.yaml#responseTime
+  $ref: ./metrics.yaml
 plans:
   base:
     availability: R/00:00:00Z/23:00:00Z
