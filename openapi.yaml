@@ -14,6 +14,8 @@ info:
     url: foo.bar.com
     email: zsandozland@gmail.com
   termsOfService: foo.bar.com/tos
+  x-sla:
+    $ref: ./sla.yaml
 externalDocs:
   description: Find out more about OpenAPI generator
   url: 'https://openapi-generator.tech'
