@@ -1,0 +1,8 @@
+requests:
+  type: "int64"
+  description: "Number of requests"
+responseTime:
+  type: "int64"
+  unit: "ms"
+  x-measure-quantity: "duration"
+  description: "Max number of milliseconds"

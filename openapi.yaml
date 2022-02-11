@@ -51,6 +51,9 @@ paths:
       x-tags:
         - tag: pet
       x-contentType: application/json
+      x-sla-rates:
+        x-sla-metric-responseTime:
+          - max: 7500
     post:
       tags:
         - pet

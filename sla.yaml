@@ -7,13 +7,9 @@ context:
   provider: ISAGroup
 metrics:
   requests:
-    type: "int64"
-    description: "Number of requests"
+    $ref: ./metrics.yaml#requests
   responseTime:
-    type: "int64"
-    unit: "ms"
-    x-measure-quantity: "duration"
-    description: "Max number of milliseconds"
+    $ref: ./metrics.yaml#responseTime
 plans:
   base:
     availability: R/00:00:00Z/23:00:00Z
