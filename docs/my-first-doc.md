@@ -95,4 +95,7 @@ The beginning of an awesome article...
 9 <p/>
 
 ## title number two
-<a name="anchor-t2"></a>
+
+A [link back to this part of the api](https://testers-inc.stoplight.io/docs/oas-test/b3A6MzIzNDAw-add-a-new-pet-to-the-store)
+
+A [relative link back to this part of the api](./b3A6MzIzNDAw-add-a-new-pet-to-the-store)
