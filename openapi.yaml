@@ -74,7 +74,13 @@ paths:
       x-tags:
         - tag: pet
       x-contentType: application/json
-      description: description for /pet
+      description: |-
+        description for /pet
+
+
+        See also [a link to this part of the doco](https://testers-inc.stoplight.io/docs/oas-test/branches/feature%2Fbig-spec/ZG9jOjM5NzQ5MzM1-my-first-doc#title-number-two)
+
+        See also [a relative link to this part of the doco](./ZG9jOjM5NzQ5MzM1-my-first-doc#title-number-two)
   /pet/findByStatus:
     get:
       tags:
