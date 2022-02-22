@@ -96,6 +96,6 @@ The beginning of an awesome article...
 
 ## title number two
 
-A [link back to this part of the api](https://testers-inc.stoplight.io/docs/oas-test/branches/feature%25%2Fbig-spec/b3A6MzIzNDAw-add-a-new-pet-to-the-store)
+A [link back to this part of the api](https://testers-inc.stoplight.io/docs/oas-test/branches/feature%%2Fbig-spec/b3A6MzIzNDAw-add-a-new-pet-to-the-store)
 
 A [relative link back to this part of the api](./b3A6MzIzNDAw-add-a-new-pet-to-the-store)
